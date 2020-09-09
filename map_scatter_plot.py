@@ -1,4 +1,4 @@
-
+from math import sqrt
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -12,21 +12,29 @@ def main():
     # regions.loc[regions['Region'] == 'South Asia', 'Continent'] = 'Asia'
     # regions.loc[regions['Region'] == 'South Asia', 'Continent'] = 'Asia'
     data.sort_values('capacity_mw', ascending=False)
+    data['aux_capacity_mw'] = data['capacity_mw']
+    data.loc[data['capacity_mw'] < 100, 'aux_capacity_mw'] = 300
+    data.loc[(data['capacity_mw'] > 99) & (data['capacity_mw'] < 1000), 'aux_capacity_mw'] = 900
+    data.loc[(data['capacity_mw'] > 999) & (4999 > data['capacity_mw']), 'aux_capacity_mw'] = 2500
+    data.loc[(data['capacity_mw'] > 5000) & (100000 > data['capacity_mw']), 'aux_capacity_mw'] = 12000
 
     data['text'] = data['name'] + "<br>" + data['capacity_mw'].astype(str) + " Mw"
     power_plant_types = data.groupby(['primary_fuel'])['capacity_mw'].median().sort_values().axes[0]
+    new_max = data.groupby(['primary_fuel'])['capacity_mw'].max().max( ) / 40
+
     charts_orders = []
     fig = go.Figure()
     for pp in power_plant_types:
         df_sub = data[pp == data['primary_fuel']]
+        scale = df_sub['capacity_mw'].max() / new_max
         fig.add_trace(go.Scattergeo(
             lon=df_sub['longitude'],
             lat=df_sub['latitude'],
             text=df_sub['text'],
             mode='markers',
             marker=dict(
-                size=df_sub['capacity_mw'],
-                sizemode='area'
+                size=df_sub['aux_capacity_mw' ]/50,
+                sizemode="area"
             ),
             visible=True if pp == power_plant_types[0] else False
         ))
