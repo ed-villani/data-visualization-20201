@@ -1,8 +1,6 @@
-from math import sqrt
-
 import pandas as pd
 import plotly.graph_objects as go
-import numpy as np
+
 
 def main():
     data = pd.read_csv("global_power_plant_database.csv")
