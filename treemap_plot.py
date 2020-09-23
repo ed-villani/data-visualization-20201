@@ -39,7 +39,7 @@ def main():
         return df_all_trees
 
     df_all_trees_1 = build_hierarchical_dataframe(df, levels, value_column, color_columns)
-    data = pd.read_csv("global_power_plant_database.csv")
+    data = pd.read_csv("data/power_plants/global_power_plant_database.csv")
     regions = pd.read_excel("contry_continent.xlsx")
     data = data.join(regions.set_index('ISO (3)'), on='country')
     capacity_per_country = data.groupby(['country']).sum()['capacity_mw']

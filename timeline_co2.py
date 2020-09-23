@@ -6,7 +6,6 @@ from plotly.subplots import make_subplots
 def main():
     co = pd.read_csv("annual-co-emissions-by-region.csv")
     co = co.dropna()
-    # co = co[co['Year'] >= 1971]
     country_continent = pd.read_excel("contry_continent.xlsx")
     country_continent.loc[country_continent['Region'] == 'North America', 'Continent'] = 'North America'
     country_continent.loc[country_continent['Region'] == 'Central America', 'Continent'] = 'North America'
@@ -29,13 +28,8 @@ def main():
         '#ffa600'
     ]
 
-    energy = pd.read_excel(
-        'World_Energy_Balances_Highlights_(2020_edition).xlsx',
-        sheet_name='TimeSeries_1971-2019',
-        skiprows=1
-    )
 
-    fig = make_subplots(rows=2, cols=1)
+    fig = go.Figure()
     for c, color in zip(continent_list, colors):
         data = co[(co['Continent'] == c) & (co['Annual CO2 emissions (tonnes)'] > 0)]
         fig.add_trace(go.Scatter(x=data['Year'], y=data['Annual CO2 emissions (tonnes)'],
@@ -43,38 +37,107 @@ def main():
                                  mode='lines',
                                  legendgroup="group",
                                  line_color=color
-                                 ), 1, 1)
-        # fig.add_trace(go.Scatter(x=data['Year'], y=data['Annual CO2 emissions (tonnes)'],
-        #                          mode='lines',
-        #                          legendgroup="group",
-        #                          stackgroup='one',
-        #                          groupnorm='percent',
-        #                          line_color=color,
-        #                          showlegend=False), 2, 1)
-
-    country_continent = pd.read_excel("contry_continent.xlsx")
-    country_continent.loc[country_continent['Region'] == 'North America', 'Continent'] = 'North America'
-    country_continent.loc[country_continent['Region'] == 'Central America', 'Continent'] = 'North America'
-    country_continent.loc[country_continent['Region'] == 'West Indies', 'Continent'] = 'North America'
-    country_continent.loc[country_continent['Region'] == 'South America', 'Continent'] = 'South America'
-    energy.loc[energy['Country'] == 'Korea', 'Country'] = 'Korea, South'
-    energy.loc[energy['Country'] == 'Slovak Republic', 'Country'] = "Slovakia"
-    energy.loc[energy['Country'] == 'People\'s Republic of China', 'Country'] = 'China'
-    energy = energy[energy['Flow'] == 'Production (ktoe)']
-    data = energy.join(country_continent.set_index('Country'), on='Country')
-    data = data[['Country', 'Continent'] + list(range(1971, 2019))].dropna()
-
-    for year in range(1971, 2019):
-        data.loc[energy[year] == '..', year] = 0
-        data.loc[energy[year] == 'c', year] = 0
-    data = data[data.columns[1:]].groupby('Continent').sum().T.reset_index()
-    for c, color in zip(continent_list, colors):
-        fig.add_trace(go.Scatter(x=data['index'], y=data[c],
-                                 name=c,
-                                 mode='lines',
-                                 legendgroup="group",
-                                 line_color=color
-                                 ), 2, 1)
+                                 ))
+    fig.update_yaxes(range=[0, 22 * 10 ** 9])
+    fig.update_layout(
+        xaxis=dict(
+            autorange=True,
+            rangeslider=dict(
+                autorange=True)
+        ),
+        shapes=[
+            dict(
+                type="rect",
+                # x-reference is assigned to the x-values
+                xref="x",
+                # y-reference is assigned to the plot paper [0,1]
+                yref="paper",
+                x0=1914,
+                y0=0,
+                x1=1918,
+                y1=1,
+                fillcolor="LightSalmon",
+                opacity=0.5,
+                layer="below",
+                line_width=0
+            ),
+            dict(
+                type="rect",
+                # x-reference is assigned to the x-values
+                xref="x",
+                # y-reference is assigned to the plot paper [0,1]
+                yref="paper",
+                x0=1939,
+                y0=0,
+                x1=1945,
+                y1=1,
+                fillcolor="LightSalmon",
+                opacity=0.5,
+                layer="below",
+                line_width=0
+            ),
+            dict(
+                type="rect",
+                # x-reference is assigned to the x-values
+                xref="x",
+                # y-reference is assigned to the plot paper [0,1]
+                yref="paper",
+                x0=2008,
+                y0=0,
+                x1=2009,
+                y1=1,
+                fillcolor="LightSalmon",
+                opacity=0.5,
+                layer="below",
+                line_width=0
+            ),
+            dict(
+                type="rect",
+                # x-reference is assigned to the x-values
+                xref="x",
+                # y-reference is assigned to the plot paper [0,1]
+                yref="paper",
+                x0=1929,
+                y0=0,
+                x1=1933,
+                y1=1,
+                fillcolor="LightSalmon",
+                opacity=0.5,
+                layer="below",
+                line_width=0
+            ),
+            dict(
+                type="rect",
+                # x-reference is assigned to the x-values
+                xref="x",
+                # y-reference is assigned to the plot paper [0,1]
+                yref="paper",
+                x0=1989,
+                y0=0,
+                x1=1992,
+                y1=1,
+                fillcolor="LightSalmon",
+                opacity=0.5,
+                layer="below",
+                line_width=0
+            ),
+            dict(
+                type="rect",
+                # x-reference is assigned to the x-values
+                xref="x",
+                # y-reference is assigned to the plot paper [0,1]
+                yref="paper",
+                x0=1956,
+                y0=0,
+                x1=1960,
+                y1=1,
+                fillcolor="LightSalmon",
+                opacity=0.5,
+                layer="below",
+                line_width=0
+            )
+        ]
+    )
     fig.write_html('tmp3.html', auto_open=True)
 
 
