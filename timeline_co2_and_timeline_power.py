@@ -6,7 +6,7 @@ from plotly.subplots import make_subplots
 
 
 def county_continent():
-    country_continent = pd.read_excel("contry_continent.xlsx")
+    country_continent = pd.read_excel("country_continent.xlsx")
     country_continent.loc[country_continent['Region'] == 'North America', 'Continent'] = 'North America'
     country_continent.loc[country_continent['Region'] == 'Central America', 'Continent'] = 'North America'
     country_continent.loc[country_continent['Region'] == 'West Indies', 'Continent'] = 'North America'
@@ -28,7 +28,7 @@ def main():
     co = pd.read_csv("annual-co-emissions-by-region.csv")
     co = co.dropna()
     co = co[co['Year'] >= 1971]
-    country_continent = pd.read_excel("contry_continent.xlsx")
+    country_continent = pd.read_excel("country_continent.xlsx")
     country_continent.loc[country_continent['Region'] == 'North America', 'Continent'] = 'North America'
     country_continent.loc[country_continent['Region'] == 'Central America', 'Continent'] = 'North America'
     country_continent.loc[country_continent['Region'] == 'West Indies', 'Continent'] = 'North America'
@@ -74,7 +74,7 @@ def main():
         #                          line_color=color,
         #                          showlegend=False), 2, 1)
 
-    country_continent = pd.read_excel("contry_continent.xlsx")
+    country_continent = pd.read_excel("country_continent.xlsx")
     country_continent.loc[country_continent['Region'] == 'North America', 'Continent'] = 'North America'
     country_continent.loc[country_continent['Region'] == 'Central America', 'Continent'] = 'North America'
     country_continent.loc[country_continent['Region'] == 'West Indies', 'Continent'] = 'North America'

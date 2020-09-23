@@ -1,21 +1,15 @@
 from copy import deepcopy
 from math import log10
 
-import pandas as pd
+import plotly
 import plotly.graph_objects as go
 
 from charts.power_plants.power_plant_colors import get_power_plant_color
+from charts.power_plants.power_plants import get_power_plants_types, set_visible_by_option, read_power_plants
 
-GLOBAL_POWER_PLANT_DB = '/Users/eduardovillani/git/data-visualization-20201/data/power_plants/global_power_plant_database.csv'
 
-
-def main():
-    data = pd.read_csv(GLOBAL_POWER_PLANT_DB)[[
-        'country',
-        'country_long',
-        'primary_fuel',
-        'capacity_mw'
-    ]]
+def chart_boxplot():
+    data = read_power_plants()
 
     countries_names = get_country_names(data)
     buttons = []
@@ -41,7 +35,7 @@ def main():
                 method="update",
                 args=[
                     {
-                        "visible": set_visible_by_country_option(c, charts_orders)
+                        "visible": set_visible_by_option(c, charts_orders)
                     }
                 ]
             )
@@ -65,11 +59,20 @@ def main():
         xaxis_title="Power Plant Type"
     )
 
-    fig.write_html('tmp.html', auto_open=True)
+    return plotly.offline.plot(figure_or_data=fig, include_plotlyjs=False, output_type='div')
 
 
-def get_country_names(data):
-    return ['World'] + data['country_long'].unique().tolist()
+def get_country_names(data, world=True):
+    """
+    Return World's Countries list
+    :param data:
+    :param world:
+    :return:
+    """
+    if world:
+        return ['World'] + data['country_long'].unique().tolist()
+    else:
+        return data['country_long'].unique().tolist()
 
 
 def capacity_per_power_plant(data, power_plant_type, country='World'):
@@ -88,26 +91,6 @@ def capacity_per_power_plant(data, power_plant_type, country='World'):
             'capacity_mw']
     del aux_data
     return capacity
-
-
-def get_power_plants_types(data, country='World'):
-    """
-    Returns the power plants type for the data file sorted by the world median of capacity
-    :param country:
-    :param data:
-    :return: power_pant_types
-    """
-    aux_data = deepcopy(data)
-    if country == 'World':
-        power_plant_types = aux_data
-    else:
-        power_plant_types = aux_data[country == aux_data['country_long']]
-    del aux_data
-    return power_plant_types.groupby(['primary_fuel'])['capacity_mw'].median().sort_values().axes[0]
-
-
-def set_visible_by_country_option(country, country_list):
-    return [True if c == country else False for c in country_list]
 
 
 if __name__ == '__main__':

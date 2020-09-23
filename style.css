@@ -1,0 +1,28 @@
+body {
+    width: 100%;
+    /*margin:0 auto;*/
+    height: 800px;
+}
+
+div.map {
+    width: 50%;
+    margin: 0 auto;
+    height: 50%;
+}
+
+div.container {
+    width: 100%;
+    height: 100%;
+}
+
+div.left {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+div.right {
+    width: 50%;
+    height: 50%;
+    margin-left: 50%;
+}
