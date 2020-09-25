@@ -25,7 +25,7 @@ def pop_per_year():
 
 
 def main():
-    co = pd.read_csv("annual-co-emissions-by-region.csv")
+    co = pd.read_csv("../../data/carbon/annual-co-emissions-by-region.csv")
     co = co.dropna()
     co = co[co['Year'] >= 1971]
     country_continent = pd.read_excel("country_continent.xlsx")

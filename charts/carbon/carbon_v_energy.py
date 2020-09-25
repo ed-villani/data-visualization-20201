@@ -1,29 +1,39 @@
+from copy import deepcopy
 from math import log10
 
 import pandas as pd
 import plotly.graph_objects as go
 
+from charts.carbon.timeline_co2_and_timeline_power import county_continent
 
-def get_data_from_year(current_year):
-    co = pd.read_csv("annual-co-emissions-by-region.csv").dropna()
-    co = co[co['Year'] == current_year]
-    gdp = pd.read_excel("gdp_per_year.xls")[['Country Name',
-                                             'Country Code',
-                                             str(current_year)]].dropna()
-    pop = pd.read_excel("pop_per_year_per_country.xls")[['Country Name',
-                                                         'Country Code',
-                                                         str(current_year)]].dropna()
-    pop = pop.rename(columns={str(current_year): f"{str(current_year)}_pop", "Country Code": "code_pop"})[
-        [f'{str(current_year)}_pop', 'code_pop']]
 
-    data = co.join(gdp.set_index('Country Code'), on='Code')
-    data = data.join(pop.set_index("code_pop"), on='Code').dropna(
-        subset=[str(current_year), 'Country Name', f'{str(current_year)}_pop'])
-    data['co2_per_capta'] = data['Annual CO2 emissions (tonnes)'] / data[f'{str(current_year)}_pop']
-    return data
+def pop_per_year():
+    pop_per_year = pd.read_excel("pop_per_year_per_country.xls")
+    pop_per_year = pop_per_year[['Country Name', 'Country Code'] + [str(i) for i in range(1960, 2019)]]
+    country_continent = county_continent()
+    pop_per_year = pop_per_year.join(country_continent.set_index('ISO (3)'), on='Country Code')
+    return deepcopy(pop_per_year)[['Country Name'] + [str(i) for i in range(1960, 2019)]].set_index('Country Name').T.reset_index()
 
 
 def main():
+    pop = pop_per_year()
+    co = pd.read_csv("../../data/carbon/annual-co-emissions-by-region.csv").dropna()
+    data = co[(co['Entity'] == 'Argentina') & (co['Year'] > 1971)]
+    data = data.reset_index()['Annual CO2 emissions (tonnes)']
+
+    energy = pd.read_excel(
+        'World_Energy_Balances_Highlights_(2020_edition).xlsx',
+        sheet_name='TimeSeries_1971-2019',
+        skiprows=1
+    )
+    for year in range(1971, 2019):
+        energy.loc[energy[year] == '..', year] = 0
+
+    energy = energy[(energy['Country'] == 'Australia') & (energy['NoFlow'] == '01. Production (ktoe)')]
+
+    energy = energy[list(range(1971, 2019))].sum().reset_index()
+
+    exit()
     start_index = -1
     min_year = get_min_data()
     max_year = get_max_year()
@@ -52,7 +62,7 @@ def main():
 
     # Build sliders
     sliders = [go.layout.Slider(
-        active=len(years)-1,
+        active=len(years) - 1,
         currentvalue={"prefix": "Year: "},
         pad={"t": 50},
         steps=steps
@@ -70,7 +80,7 @@ def main():
 
 
 def get_max_year():
-    co = pd.read_csv("annual-co-emissions-by-region.csv").dropna()
+    co = pd.read_csv("../../data/carbon/annual-co-emissions-by-region.csv").dropna()
     max_year_by_country = co.groupby(['Code'], sort=False)['Year'].max().reset_index()
     if max_year_by_country.max()['Year'] > 2019:
         max_year = 2019
@@ -80,7 +90,7 @@ def get_max_year():
 
 
 def get_min_data():
-    co = pd.read_csv("annual-co-emissions-by-region.csv").dropna()
+    co = pd.read_csv("../../data/carbon/annual-co-emissions-by-region.csv").dropna()
     min_year_by_country = co.groupby(['Code'], sort=False)['Year'].min().reset_index()
     if min_year_by_country.min()['Year'] < 1960:
         min_year = 1960
