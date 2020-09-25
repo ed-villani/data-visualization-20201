@@ -1,5 +1,6 @@
 from math import log10
 
+import plotly
 import plotly.graph_objects as go
 
 from charts.carbon.carbon import data_by_year, carbon_data
@@ -83,7 +84,7 @@ def scatter_plot():
         xaxis_title="GDPPC (U$)"
     )
     fig.write_html('tmp3.html', auto_open=True)
-    return fig.to_json()
+    return plotly.offline.plot(figure_or_data=fig, include_plotlyjs=False, output_type='div')
 
 
 def get_max_year():

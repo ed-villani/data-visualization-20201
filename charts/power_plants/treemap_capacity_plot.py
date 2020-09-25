@@ -1,3 +1,4 @@
+import plotly
 import plotly.graph_objects as go
 
 from charts.build_hierarchical_dataframe import build_hierarchical_dataframe
@@ -34,7 +35,7 @@ def treemap_capacity():
         treemapcolorway=[continent_color(c) for c in get_continents()],
     )
     fig.write_html('tmp3.html', auto_open=True)
-    return fig.to_json()
+    return plotly.offline.plot(figure_or_data=fig, include_plotlyjs=False, output_type='div')
 
 
 if __name__ == '__main__':

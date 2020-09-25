@@ -1,5 +1,6 @@
 from copy import deepcopy
 
+import plotly
 import plotly.graph_objects as go
 
 from charts.carbon.carbon import carbon_data
@@ -61,7 +62,8 @@ def timeline():
         shapes=[shapes(*years) for years in important_year]
     )
     # fig.write_html('tmp3.html', auto_open=True)
-    return fig.to_json()
+    return plotly.offline.plot(figure_or_data=fig, include_plotlyjs=False, output_type='div')
+
 
 if __name__ == '__main__':
     timeline()

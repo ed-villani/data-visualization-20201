@@ -1,11 +1,12 @@
+import plotly
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 from charts.power_plants.power_plant_colors import join_colors
-from charts.power_plants.power_plants import power_plants_pareto_count, power_plants_pareto_capacity
+from charts.power_plants.power_plants import power_plants_pareto_capacity
 
 
-def main():
+def capacity_pareto():
     data = power_plants_pareto_capacity()
     data = join_colors(data, 'primary_fuel')
     fig = make_subplots(specs=[[{"secondary_y": True}]])
@@ -49,8 +50,9 @@ def main():
         )
     )
     fig['layout']['yaxis2'].update(range=[0, 105], autorange=False)
-    fig.write_html('tmp3.html', auto_open=True)
+    # fig.write_html('tmp3.html', auto_open=True)
+    return plotly.offline.plot(figure_or_data=fig, include_plotlyjs=False, output_type='div')
 
 
 if __name__ == '__main__':
-    main()
+    capacity_pareto()
