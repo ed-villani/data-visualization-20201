@@ -7,3 +7,8 @@ def get_power_plant_color(power_plant):
     data = pd.read_csv(POWER_PLANT_COLORS)
     color = data[data['Type'] == power_plant]['Color'].values[0]
     return color
+
+
+def join_colors(other, on):
+    data = pd.read_csv(POWER_PLANT_COLORS)
+    return other.join(data.set_index('Type'), on=on)

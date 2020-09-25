@@ -1,5 +1,6 @@
 from copy import deepcopy
 import pandas as pd
+import numpy as np
 
 from charts.geolocation.geolocation import join_on_iso_3
 
@@ -8,6 +9,36 @@ GLOBAL_POWER_PLANT_DB = '/Users/eduardovillani/git/data-visualization-20201/data
 
 def read_power_plants():
     return pd.read_csv(GLOBAL_POWER_PLANT_DB)
+
+
+def power_plants_pareto_generated():
+    data = read_power_plants().dropna(subset=['estimated_generation_gwh']).groupby('primary_fuel').sum()['estimated_generation_gwh'].reset_index()
+    data = data.sort_values('estimated_generation_gwh', ascending=False).reset_index(drop=True)
+    proportion = data['estimated_generation_gwh'].tolist()
+    proportion = np.cumsum(np.array(proportion) / sum(proportion))
+
+    data['proportion'] = pd.Series(proportion)
+    return data
+
+
+def power_plants_pareto_capacity():
+    data = read_power_plants().groupby('primary_fuel').sum()['capacity_mw'].reset_index()
+    data = data.sort_values('capacity_mw', ascending=False).reset_index(drop=True)
+    proportion = data['capacity_mw'].tolist()
+    proportion = np.cumsum(np.array(proportion) / sum(proportion))
+
+    data['proportion'] = pd.Series(proportion)
+    return data
+
+
+def power_plants_pareto_count():
+    data = read_power_plants().groupby('primary_fuel').count()['latitude'].reset_index()
+    data = data.sort_values('latitude', ascending=False).reset_index(drop=True)
+    proportion = data['latitude'].tolist()
+    proportion = np.cumsum(np.array(proportion) / sum(proportion))
+
+    data['proportion'] = pd.Series(proportion)
+    return data
 
 
 def get_power_plants_types(data, country='World'):
