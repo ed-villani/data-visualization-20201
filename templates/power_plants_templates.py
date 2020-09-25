@@ -28,7 +28,7 @@ class PowerPlantsTemplate:
 
     </html>"""
 
-        with open('/Users/eduardovillani/git/data-visualization-20201/teste.html', 'w') as f:
+        with open('/proto_dash.html', 'w') as f:
             f.write(template)
 
 
