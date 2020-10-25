@@ -28,7 +28,7 @@ class PowerPlantsTemplate:
 
     </html>"""
 
-        with open('/proto_dash.html', 'w') as f:
+        with open('/index.html', 'w') as f:
             f.write(template)
 
 
