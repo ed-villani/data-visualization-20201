@@ -11,7 +11,7 @@ class PowerPlantsTemplate:
     def __new__(cls, boxplot, map_scatter_plot, treemap, pareto, timeline, gdp_v_carbon):
         template = f"""<html>
     <head>
-        <link rel="stylesheet" href="templates/style/style.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     </head>
 
@@ -91,7 +91,7 @@ in a change of a non-renewable energy mix to a renewable one.
 
     </html>"""
 
-        with open('/Users/eduardovillani/git/data-visualization-20201/templates/index.html', 'w') as f:
+        with open('/Users/eduardovillani/git/data-visualization-20201/index.html', 'w') as f:
             f.write(template)
 
 
