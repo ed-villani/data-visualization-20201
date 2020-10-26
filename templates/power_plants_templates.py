@@ -11,7 +11,7 @@ class PowerPlantsTemplate:
     def __new__(cls, boxplot, map_scatter_plot, treemap, pareto, timeline, gdp_v_carbon):
         template = f"""<html>
     <head>
-        <link rel="stylesheet" href="style/style.css" type="text/css">
+        <link rel="stylesheet" href="templates/style/style.css" type="text/css">
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     </head>
 
