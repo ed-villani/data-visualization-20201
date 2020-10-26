@@ -4,10 +4,31 @@ body {
     height: 800px;
 }
 
+#apnd {
+    white-space: nowrap;
+}
+#apnd > div {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+#apnd > div + div {
+    margin-left: 10px
+}
+
+.box{
+	width:100px;
+	height:100px;
+}
+
+.red{
+	background:#f00;
+}
+
 div.map {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    height: 50%;
+    height: 100%;
 }
 
 div.container {
@@ -26,3 +47,45 @@ div.right {
     height: 50%;
     margin-left: 50%;
 }
+
+h1.title {
+    text-align:center;
+}
+
+h2.subtitle {
+    text-align:center;
+}
+
+#row {
+    white-space: nowrap;
+}
+#row > div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+#row > div + div {
+    margin-left: 50px;
+}
+
+p.co2 {
+  text-align: center;
+}
+
+.red {
+  	background: #f00;
+    height: 100px;
+    width: 100px;
+    display: table;
+    text-align: center;
+}
+
+.red > .co2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#row-parent {
+    text-align: center;
+}
+

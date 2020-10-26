@@ -83,7 +83,7 @@ def scatter_plot():
         yaxis_title="CO2 (Tonnes per capita)",
         xaxis_title="GDPPC (U$)"
     )
-    fig.write_html('tmp3.html', auto_open=True)
+    # fig.write_html('tmp3.html', auto_open=True)
     return plotly.offline.plot(figure_or_data=fig, include_plotlyjs=False, output_type='div')
 
 

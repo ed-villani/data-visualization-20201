@@ -34,7 +34,7 @@ def treemap_capacity():
             'yanchor': 'top'},
         treemapcolorway=[continent_color(c) for c in get_continents()],
     )
-    fig.write_html('tmp3.html', auto_open=True)
+    # fig.write_html('tmp3.html', auto_open=True)
     return plotly.offline.plot(figure_or_data=fig, include_plotlyjs=False, output_type='div')
 
 
