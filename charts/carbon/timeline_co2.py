@@ -7,7 +7,7 @@ from charts.carbon.carbon import carbon_data
 from charts.geolocation.geolocation import join_on_iso_3, get_continents, continent_color
 
 
-def shapes(x0, x1):
+def shapes(x0, x1, color):
     return dict(
         type="rect",
         xref="x",
@@ -16,7 +16,7 @@ def shapes(x0, x1):
         y0=0,
         x1=x1,
         y1=1,
-        fillcolor="LightSalmon",
+        fillcolor=color,
         opacity=0.5,
         layer="below",
         line_width=0
@@ -41,12 +41,12 @@ def timeline():
     co = join_on_iso_3(co, 'Code')
     co = co.groupby(['Continent', 'Year']).sum().reset_index()
     important_year = [
-        [1914, 1918],
-        [1929, 1933],
-        [1939, 1945],
-        [1956, 1960],
-        [1989, 1992],
-        [2008, 2010]
+        [1914, 1918, "#C0BCB5"],
+        [1929, 1933, "#4A6C6F"],
+        [1939, 1945, "#846075"],
+        [1956, 1960, "#AF5D63"],
+        [1989, 1992, "#ED474A"],
+        [2008, 2010, "#9649CB"]
     ]
     fig = go.Figure()
     for c in get_continents():

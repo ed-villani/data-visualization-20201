@@ -72,15 +72,82 @@ p.co2 {
   text-align: center;
 }
 
-.red {
-  	background: #f00;
+.ww1 {
+  	background: #C0BCB5;
     height: 100px;
     width: 100px;
     display: table;
     text-align: center;
 }
 
-.red > .co2 {
+.crash29 {
+  	background: #4A6C6F;
+    height: 100px;
+    width: 100px;
+    display: table;
+    text-align: center;
+}
+
+.ww2 {
+  	background: #846075;
+    height: 100px;
+    width: 100px;
+    display: table;
+    text-align: center;
+}
+
+.asiantiger {
+  	background: #AF5D63;
+    height: 100px;
+    width: 100px;
+    display: table;
+    text-align: center;
+}
+
+
+.cw {
+  	background: #ED474A;
+    height: 100px;
+    width: 100px;
+    display: table;
+    text-align: center;
+}
+
+
+.crash2008 {
+  	background: #9649CB;
+    height: 100px;
+    width: 100px;
+    display: table;
+    text-align: center;
+}
+
+.crash2008 > .co2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ww1 > .co2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ww2 > .co2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.crash29 > .co2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.asiantiger > .co2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cw > .co2 {
     display: table-cell;
     vertical-align: middle;
 }
