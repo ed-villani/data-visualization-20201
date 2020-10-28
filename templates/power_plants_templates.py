@@ -14,7 +14,10 @@ class PowerPlantsTemplate:
         template = f"""<html>
     <head>
         <link rel="stylesheet" href="style.css" type="text/css">
+        
+        <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="bumpchart.js"></script>
     </head>
 
     <body>
@@ -56,8 +59,22 @@ electricity.</li>
         <div>{map_scatter_plot}</div>
         <div>{boxplot[0]}</div>
         <div>{treemap}</div>
+
+                    <p>
+                The history of human development is also the history of CO2. Since the begging of the Industrial 
+Revolution,  CO2 level in Earth's atmosphere is rising. We can notice some behaviour on CO2 over great history events.
+We can also notice how the developed countries are slowly emitting less CO2 over the last two decades, probably because
+in a change of a non-renewable energy mix to a renewable one.
+            </p>
+
         <div>{pareto[0]}</div>
         <div>{pareto[1]}</div>
+
+            <p>
+                There is more than 1 century that humans starting constructing power plants. We started with
+                non-renewables ones, passing to sustainable and then renewables.
+            </p>
+
         <div>{pp_per_year}</div>
         <div>{pp_per_year_cumsum}</div>
 
@@ -92,7 +109,8 @@ in a change of a non-renewable energy mix to a renewable one.
             </div>
 
         <div>{timeline}</div>
-        <div>{gdp_v_carbon}</div>
+        <div>{gdp_v_carbon}</div>      
+        <div id="my_dataviz"></div>
     </body>
 
     </html>"""

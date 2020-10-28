@@ -1,0 +1,296 @@
+club,year,conference,points,wins,losses,ties,goals_for,goals_against,alias
+Tampa Bay Mutiny,1996,Eastern,58,20,12,0,66,51,""
+D.C. United,1996,Eastern,46,16,16,0,62,56,""
+Columbus Crew SC,1996,Eastern,37,15,17,0,59,60,Columbus Crew
+New York Red Bulls,1996,Eastern,39,15,17,0,45,47,MetroStars
+New England Revolution,1996,Eastern,33,15,17,0,43,56,""
+LA Galaxy,1996,Western,49,19,13,0,59,49,Los Angeles Galaxy
+FC Dallas,1996,Western,41,17,15,0,50,48,Dallas Burn
+Sporting Kansas City,1996,Western,41,17,15,0,61,63,Kansas City Wizards
+San Jose Earthquakes,1996,Western,39,15,17,0,50,50,San Jose Clash
+Colorado Rapids,1996,Western,29,11,21,0,44,59,""
+D.C. United,1997,Eastern,55,21,11,0,70,53,""
+Tampa Bay Mutiny,1997,Eastern,45,17,15,0,55,60,""
+Columbus Crew SC,1997,Eastern,39,15,17,0,42,41,Columbus Crew
+New England Revolution,1997,Eastern,37,15,17,0,40,53,""
+New York Red Bulls,1997,Eastern,35,13,19,0,43,53,MetroStars
+Sporting Kansas City,1997,Western,49,21,11,0,57,51,Kansas City Wizards
+LA Galaxy,1997,Western,44,16,16,0,55,44,Los Angeles Galaxy
+FC Dallas,1997,Western,42,16,16,0,55,49,Dallas Burn
+Colorado Rapids,1997,Western,38,14,18,0,50,59,""
+San Jose Earthquakes,1997,Western,30,12,20,0,55,59,San Jose Clash
+D.C. United,1998,Eastern,58,24,8,0,74,48,""
+Columbus Crew SC,1998,Eastern,45,15,17,0,67,56,Columbus Crew
+New York Red Bulls,1998,Eastern,39,15,17,0,54,63,MetroStars
+Miami Fusion,1998,Eastern,35,15,17,0,46,68,""
+Tampa Bay Mutiny,1998,Eastern,34,12,20,0,46,57,""
+New England Revolution,1998,Eastern,29,11,21,0,53,66,""
+LA Galaxy,1998,Western,68,24,8,0,85,44,Los Angeles Galaxy
+Chicago Fire,1998,Western,56,20,12,0,62,45,""
+Colorado Rapids,1998,Western,44,16,16,0,62,69,""
+FC Dallas,1998,Western,37,15,17,0,43,59,Dallas Burn
+San Jose Earthquakes,1998,Western,33,13,19,0,48,60,San Jose Clash
+Sporting Kansas City,1998,Western,32,12,20,0,45,50,Kansas City Wizards
+D.C. United,1999,Eastern,57,23,9,0,65,43,""
+Columbus Crew SC,1999,Eastern,45,19,13,0,48,39,Columbus Crew
+Tampa Bay Mutiny,1999,Eastern,32,14,18,0,51,50,""
+Miami Fusion,1999,Eastern,29,13,19,0,42,59,""
+New England Revolution,1999,Eastern,26,12,20,0,38,53,""
+New York Red Bulls,1999,Eastern,15,7,25,0,32,64,MetroStars
+LA Galaxy,1999,Western,54,20,12,0,49,29,Los Angeles Galaxy
+FC Dallas,1999,Western,51,19,13,0,54,35,Dallas Burn
+Chicago Fire,1999,Western,48,18,14,0,51,36,""
+Colorado Rapids,1999,Western,48,20,12,0,38,39,""
+San Jose Earthquakes,1999,Western,37,19,13,0,48,49,San Jose Clash
+Sporting Kansas City,1999,Western,20,8,24,0,33,53,Kansas City Wizards
+New York Red Bulls,2000,Eastern,54,17,12,3,64,56,MetroStars
+New England Revolution,2000,Eastern,45,13,13,6,47,49,""
+Miami Fusion,2000,Eastern,41,12,15,5,54,56,""
+D.C. United,2000,Eastern,30,8,18,6,44,63,""
+Sporting Kansas City,2000,Western,57,16,7,9,47,29,Kansas City Wizards
+LA Galaxy,2000,Western,50,14,10,8,47,37,Los Angeles Galaxy
+Colorado Rapids,2000,Western,43,13,15,4,43,59,""
+San Jose Earthquakes,2000,Western,29,7,17,8,35,50,""
+Chicago Fire,2000,Central,57,17,9,6,67,51,""
+Tampa Bay Mutiny,2000,Central,52,16,12,4,62,50,""
+FC Dallas,2000,Central,46,14,14,4,54,54,Dallas Burn
+Columbus Crew SC,2000,Central,38,11,16,5,48,58,Columbus Crew
+Miami Fusion,2001,Eastern,53,16,5,5,57,36,""
+New York Red Bulls,2001,Eastern,42,13,10,3,38,35,MetroStars
+New England Revolution,2001,Eastern,27,7,14,6,35,52,""
+D.C. United,2001,Eastern,26,8,16,2,42,50,""
+LA Galaxy,2001,Western,47,14,7,5,52,36,Los Angeles Galaxy
+San Jose Earthquakes,2001,Western,45,13,7,6,47,29,""
+Sporting Kansas City,2001,Western,36,11,13,3,33,53,Kansas City Wizards
+Colorado Rapids,2001,Western,23,5,13,8,36,47,""
+Chicago Fire,2001,Central,53,16,6,5,50,30,""
+Columbus Crew SC,2001,Central,45,13,7,6,49,36,Columbus Crew
+FC Dallas,2001,Central,35,10,11,5,48,47,Dallas Burn
+Tampa Bay Mutiny,2001,Central,14,4,21,2,32,68,""
+New England Revolution,2002,Eastern,38,12,14,2,49,49,""
+Columbus Crew SC,2002,Eastern,38,11,12,5,44,43,Columbus Crew
+Chicago Fire,2002,Eastern,37,11,13,4,43,38,""
+New York Red Bulls,2002,Eastern,35,11,15,2,41,47,MetroStars
+D.C. United,2002,Eastern,32,9,14,5,31,40,""
+LA Galaxy,2002,Western,51,16,9,3,44,33,Los Angeles Galaxy
+San Jose Earthquakes,2002,Western,45,14,11,3,45,35,""
+FC Dallas,2002,Western,43,12,9,7,44,43,Dallas Burn
+Colorado Rapids,2002,Western,43,13,11,4,43,48,""
+Sporting Kansas City,2002,Western,36,9,10,9,37,45,Kansas City Wizards
+Chicago Fire,2003,Eastern,53,15,7,8,53,43,""
+New England Revolution,2003,Eastern,45,12,9,9,55,47,""
+New York Red Bulls,2003,Eastern,42,11,10,9,40,40,MetroStars
+D.C. United,2003,Eastern,39,10,11,9,38,36,""
+Columbus Crew SC,2003,Eastern,38,10,12,8,44,44,Columbus Crew
+San Jose Earthquakes,2003,Western,51,14,7,9,45,35,""
+Sporting Kansas City,2003,Western,42,11,10,9,48,44,Kansas City Wizards
+Colorado Rapids,2003,Western,40,11,12,7,40,45,""
+LA Galaxy,2003,Western,36,9,12,9,35,35,Los Angeles Galaxy
+FC Dallas,2003,Western,23,6,19,5,35,64,Dallas Burn
+Columbus Crew SC,2004,Eastern,49,12,5,13,40,32,Columbus Crew
+D.C. United,2004,Eastern,42,11,10,9,43,42,""
+New York Red Bulls,2004,Eastern,40,11,12,7,47,49,MetroStars
+New England Revolution,2004,Eastern,33,8,13,9,42,43,""
+Chicago Fire,2004,Eastern,33,8,13,9,36,44,""
+Sporting Kansas City,2004,Western,49,14,9,7,38,30,Kansas City Wizards
+LA Galaxy,2004,Western,43,11,9,10,42,40,Los Angeles Galaxy
+Colorado Rapids,2004,Western,41,10,9,11,29,32,""
+San Jose Earthquakes,2004,Western,38,9,10,11,41,35,""
+FC Dallas,2004,Western,36,10,14,6,34,45,Dallas Burn
+New England Revolution,2005,Eastern,59,17,7,8,55,37,""
+D.C. United,2005,Eastern,54,16,10,6,58,37,""
+Chicago Fire,2005,Eastern,49,15,13,4,49,50,""
+New York Red Bulls,2005,Eastern,47,12,9,11,53,49,MetroStars
+Sporting Kansas City,2005,Eastern,45,11,9,12,52,44,Kansas City Wizards
+Columbus Crew SC,2005,Eastern,38,11,16,5,34,45,Columbus Crew
+San Jose Earthquakes,2005,Western,64,18,4,10,53,31,""
+FC Dallas,2005,Western,48,13,10,9,52,44,""
+Colorado Rapids,2005,Western,45,13,13,6,40,37,""
+LA Galaxy,2005,Western,45,13,13,6,44,45,Los Angeles Galaxy
+Real Salt Lake,2005,Western,20,5,22,5,30,65,""
+CD Chivas USA,2005,Western,18,4,22,6,31,67,Chivas USA
+D.C. United,2006,Eastern,55,15,7,10,52,38,""
+New England Revolution,2006,Eastern,48,12,8,12,39,35,""
+Chicago Fire,2006,Eastern,47,13,11,8,43,41,""
+New York Red Bulls,2006,Eastern,39,9,11,12,41,41,""
+Sporting Kansas City,2006,Eastern,38,10,14,8,43,45,Kansas City Wizards
+Columbus Crew SC,2006,Eastern,33,8,15,9,30,42,Columbus Crew
+FC Dallas,2006,Western,52,16,12,4,48,44,""
+Houston Dynamo,2006,Western,46,11,8,13,44,40,""
+CD Chivas USA,2006,Western,43,10,9,13,45,42,Chivas USA
+Colorado Rapids,2006,Western,41,11,13,8,36,49,""
+LA Galaxy,2006,Western,39,11,15,6,37,37,Los Angeles Galaxy
+Real Salt Lake,2006,Western,39,10,13,9,45,49,""
+D.C. United,2007,Eastern,55,16,7,7,56,34,""
+New England Revolution,2007,Eastern,50,14,8,8,51,43,""
+New York Red Bulls,2007,Eastern,43,12,11,7,47,45,""
+Chicago Fire,2007,Eastern,40,10,10,10,31,36,""
+Sporting Kansas City,2007,Eastern,40,11,12,7,45,45,Kansas City Wizards
+Columbus Crew SC,2007,Eastern,37,9,11,10,39,44,Columbus Crew
+Toronto FC,2007,Eastern,25,6,17,7,25,49,""
+CD Chivas USA,2007,Western,53,15,7,8,46,28,Chivas USA
+Houston Dynamo,2007,Western,52,15,8,7,43,23,""
+FC Dallas,2007,Western,44,13,12,5,37,44,""
+Colorado Rapids,2007,Western,35,9,13,8,29,34,""
+LA Galaxy,2007,Western,34,9,14,7,38,48,Los Angeles Galaxy
+Real Salt Lake,2007,Western,27,6,15,9,31,45,""
+Columbus Crew SC,2008,Eastern,57,17,7,6,50,36,Columbus Crew
+Chicago Fire,2008,Eastern,46,13,10,7,44,33,""
+New England Revolution,2008,Eastern,43,12,11,7,40,43,""
+Sporting Kansas City,2008,Eastern,42,11,10,9,37,39,Kansas City Wizards
+New York Red Bulls,2008,Eastern,39,10,11,9,42,48,""
+D.C. United,2008,Eastern,37,11,15,4,43,51,""
+Toronto FC,2008,Eastern,35,9,13,8,34,43,""
+Houston Dynamo,2008,Western,51,13,5,12,45,32,""
+CD Chivas USA,2008,Western,43,12,11,7,40,41,Chivas USA
+Real Salt Lake,2008,Western,40,10,10,10,40,39,""
+Colorado Rapids,2008,Western,38,11,14,5,44,45,""
+FC Dallas,2008,Western,36,8,10,12,45,41,""
+LA Galaxy,2008,Western,33,8,13,9,55,62,Los Angeles Galaxy
+San Jose Earthquakes,2008,Western,33,8,13,9,32,38,""
+Columbus Crew SC,2009,Eastern,49,13,7,10,41,31,Columbus Crew
+Chicago Fire,2009,Eastern,45,11,7,12,39,34,""
+New England Revolution,2009,Eastern,42,11,10,9,33,37,""
+D.C. United,2009,Eastern,40,9,8,13,43,44,""
+Toronto FC,2009,Eastern,39,10,11,9,37,46,""
+Sporting Kansas City,2009,Eastern,33,8,13,9,33,42,Kansas City Wizards
+New York Red Bulls,2009,Eastern,21,5,19,6,27,47,""
+LA Galaxy,2009,Western,48,12,6,12,36,31,Los Angeles Galaxy
+Houston Dynamo,2009,Western,48,13,8,9,39,29,""
+Seattle Sounders FC,2009,Western,47,12,7,11,38,29,""
+CD Chivas USA,2009,Western,45,13,11,6,34,31,Chivas USA
+Real Salt Lake,2009,Western,40,11,12,7,43,35,""
+Colorado Rapids,2009,Western,40,10,10,10,42,38,""
+FC Dallas,2009,Western,39,11,13,6,50,47,""
+San Jose Earthquakes,2009,Western,30,7,14,9,36,50,""
+New York Red Bulls,2010,Eastern,51,15,9,6,38,29,""
+Columbus Crew SC,2010,Eastern,50,14,8,8,40,34,Columbus Crew
+Sporting Kansas City,2010,Eastern,39,11,13,6,36,35,Kansas City Wizards
+Chicago Fire,2010,Eastern,36,9,12,9,37,38,""
+Toronto FC,2010,Eastern,35,9,13,8,33,41,""
+New England Revolution,2010,Eastern,32,9,16,5,32,50,""
+Philadelphia Union,2010,Eastern,31,8,15,7,35,49,""
+D.C. United,2010,Eastern,22,6,20,4,21,47,""
+LA Galaxy,2010,Western,59,18,7,5,44,26,Los Angeles Galaxy
+Real Salt Lake,2010,Western,56,15,4,11,45,20,""
+FC Dallas,2010,Western,50,12,4,14,42,28,""
+Seattle Sounders FC,2010,Western,48,14,10,6,39,35,""
+Colorado Rapids,2010,Western,46,12,8,10,44,32,""
+San Jose Earthquakes,2010,Western,46,13,10,7,34,33,""
+Houston Dynamo,2010,Western,33,9,15,6,40,49,""
+CD Chivas USA,2010,Western,28,8,18,4,31,45,Chivas USA
+Sporting Kansas City,2011,Eastern,51,13,9,12,50,40,""
+Houston Dynamo,2011,Eastern,49,12,9,13,45,41,""
+Philadelphia Union,2011,Eastern,48,11,8,15,44,36,""
+Columbus Crew SC,2011,Eastern,47,13,13,8,43,44,Columbus Crew
+New York Red Bulls,2011,Eastern,46,10,8,16,50,44,""
+Chicago Fire,2011,Eastern,43,9,9,16,46,45,""
+D.C. United,2011,Eastern,39,9,13,12,49,52,""
+Toronto FC,2011,Eastern,33,6,13,15,36,59,""
+New England Revolution,2011,Eastern,28,5,16,13,38,58,""
+LA Galaxy,2011,Western,67,19,5,10,48,28,""
+Seattle Sounders FC,2011,Western,63,18,7,9,56,37,""
+Real Salt Lake,2011,Western,53,15,11,8,44,36,""
+FC Dallas,2011,Western,52,15,12,7,42,39,""
+Colorado Rapids,2011,Western,49,12,9,13,44,41,""
+Portland Timbers,2011,Western,42,11,14,9,40,48,""
+San Jose Earthquakes,2011,Western,38,8,12,14,40,45,""
+CD Chivas USA,2011,Western,36,8,14,12,41,43,Chivas USA
+Vancouver Whitecaps FC,2011,Western,28,6,18,10,35,55,""
+Sporting Kansas City,2012,Eastern,63,18,7,9,42,27,""
+D.C. United,2012,Eastern,58,17,10,7,53,43,""
+Chicago Fire,2012,Eastern,57,17,11,6,46,41,""
+New York Red Bulls,2012,Eastern,57,16,9,9,57,46,""
+Houston Dynamo,2012,Eastern,53,14,9,11,48,41,""
+Columbus Crew SC,2012,Eastern,52,15,12,7,44,44,Columbus Crew
+Montreal Impact,2012,Eastern,42,12,16,6,45,51,""
+Philadelphia Union,2012,Eastern,36,10,18,6,37,45,""
+New England Revolution,2012,Eastern,35,9,17,8,39,44,""
+Toronto FC,2012,Eastern,23,5,21,8,36,62,""
+San Jose Earthquakes,2012,Western,66,19,6,9,72,43,""
+Real Salt Lake,2012,Western,57,17,11,6,46,35,""
+Seattle Sounders FC,2012,Western,56,15,8,11,51,33,""
+LA Galaxy,2012,Western,54,16,12,6,59,47,""
+Vancouver Whitecaps FC,2012,Western,43,11,13,10,35,41,""
+FC Dallas,2012,Western,39,9,13,12,42,47,""
+Colorado Rapids,2012,Western,37,11,19,4,44,50,""
+Portland Timbers,2012,Western,34,8,16,10,34,56,""
+CD Chivas USA,2012,Western,30,7,18,9,24,58,Chivas USA
+New York Red Bulls,2013,Eastern,59,17,9,8,58,41,""
+Sporting Kansas City,2013,Eastern,58,17,10,7,47,30,""
+New England Revolution,2013,Eastern,51,14,11,9,49,38,""
+Houston Dynamo,2013,Eastern,51,14,11,9,41,41,""
+Montreal Impact,2013,Eastern,49,14,13,7,50,49,""
+Chicago Fire,2013,Eastern,49,14,13,7,47,52,""
+Philadelphia Union,2013,Eastern,46,12,12,10,42,44,""
+Columbus Crew SC,2013,Eastern,41,12,17,5,42,46,Columbus Crew
+Toronto FC,2013,Eastern,29,6,17,11,30,47,""
+D.C. United,2013,Eastern,16,3,24,7,22,59,""
+Portland Timbers,2013,Western,57,14,5,15,54,33,""
+Real Salt Lake,2013,Western,56,16,10,8,57,41,""
+LA Galaxy,2013,Western,53,15,11,8,53,38,""
+Seattle Sounders FC,2013,Western,52,15,12,7,42,42,""
+San Jose Earthquakes,2013,Western,51,14,11,9,35,42,""
+Colorado Rapids,2013,Western,51,14,11,9,45,38,""
+Vancouver Whitecaps FC,2013,Western,48,13,12,9,53,45,""
+FC Dallas,2013,Western,44,11,12,11,48,52,""
+CD Chivas USA,2013,Western,26,6,20,8,30,67,Chivas USA
+D.C. United,2014,Eastern,59,17,9,8,52,37,""
+New England Revolution,2014,Eastern,55,17,13,4,51,46,""
+Columbus Crew SC,2014,Eastern,52,14,10,10,52,42,Columbus Crew
+New York Red Bulls,2014,Eastern,50,13,10,11,55,50,""
+Sporting Kansas City,2014,Eastern,49,14,13,7,48,41,""
+Philadelphia Union,2014,Eastern,42,10,12,12,51,51,""
+Toronto FC,2014,Eastern,41,11,15,8,44,54,""
+Houston Dynamo,2014,Eastern,39,11,17,6,39,58,""
+Chicago Fire,2014,Eastern,36,6,10,18,41,51,""
+Montreal Impact,2014,Eastern,28,6,18,10,38,58,""
+Seattle Sounders FC,2014,Western,64,20,10,4,65,50,""
+LA Galaxy,2014,Western,61,17,7,10,69,37,""
+Real Salt Lake,2014,Western,56,15,8,11,54,39,""
+FC Dallas,2014,Western,54,16,12,6,55,45,""
+Vancouver Whitecaps FC,2014,Western,50,12,8,14,42,40,""
+Portland Timbers,2014,Western,49,12,9,13,61,52,""
+CD Chivas USA,2014,Western,33,9,19,6,29,61,Chivas USA
+Colorado Rapids,2014,Western,32,8,18,8,43,62,""
+San Jose Earthquakes,2014,Western,30,6,16,12,35,50,""
+New York Red Bulls,2015,Eastern,60,18,10,6,62,43,""
+Columbus Crew SC,2015,Eastern,53,15,11,8,58,53,""
+Montreal Impact,2015,Eastern,51,15,13,6,48,44,""
+D.C. United,2015,Eastern,51,15,13,6,43,45,""
+New England Revolution,2015,Eastern,50,14,12,8,48,47,""
+Toronto FC,2015,Eastern,49,15,15,4,58,58,""
+Orlando City SC,2015,Eastern,44,12,14,8,46,56,""
+New York City FC,2015,Eastern,37,10,17,7,49,58,""
+Philadelphia Union,2015,Eastern,37,10,17,7,42,55,""
+Chicago Fire,2015,Eastern,30,8,20,6,43,58,""
+FC Dallas,2015,Western,60,18,10,6,52,39,""
+Vancouver Whitecaps FC,2015,Western,53,16,13,5,45,36,""
+Portland Timbers,2015,Western,53,15,11,8,41,39,""
+Seattle Sounders FC,2015,Western,51,15,13,6,44,36,""
+LA Galaxy,2015,Western,51,14,11,9,56,46,""
+Sporting Kansas City,2015,Western,51,14,11,9,48,45,""
+San Jose Earthquakes,2015,Western,47,13,13,8,41,39,""
+Houston Dynamo,2015,Western,42,11,14,9,42,49,""
+Real Salt Lake,2015,Western,41,11,15,8,38,48,""
+Colorado Rapids,2015,Western,37,9,15,10,33,43,""
+New York Red Bulls,2016,Eastern,57,16,9,9,61,44,""
+New York City FC,2016,Eastern,54,15,10,9,62,57,""
+Toronto FC,2016,Eastern,53,14,9,11,51,39,""
+D.C. United,2016,Eastern,46,11,10,13,53,47,""
+Montreal Impact,2016,Eastern,45,11,11,12,49,53,""
+Philadelphia Union,2016,Eastern,42,11,14,9,52,55,""
+New England Revolution,2016,Eastern,42,11,14,9,44,54,""
+Orlando City SC,2016,Eastern,41,9,11,14,55,60,""
+Columbus Crew SC,2016,Eastern,36,8,14,12,50,58,""
+Chicago Fire,2016,Eastern,31,7,17,10,42,58,""
+FC Dallas,2016,Western,60,17,8,9,50,40,""
+Colorado Rapids,2016,Western,58,15,6,13,39,32,""
+LA Galaxy,2016,Western,52,12,6,16,54,39,""
+Seattle Sounders FC,2016,Western,48,14,14,6,44,43,""
+Sporting Kansas City,2016,Western,47,13,13,8,42,41,""
+Real Salt Lake,2016,Western,46,12,12,10,44,46,""
+Portland Timbers,2016,Western,44,12,14,8,48,53,""
+Vancouver Whitecaps FC,2016,Western,39,10,15,9,45,52,""
+San Jose Earthquakes,2016,Western,38,8,12,14,32,40,""
+Houston Dynamo,2016,Western,34,7,14,13,39,45,""
