@@ -40,7 +40,7 @@ var line = d3.line()
 // Uncomment this to use monotone curve
 //     	.curve(d3.curveMonotoneX);
 
-d3.csv("co_ranking.csv", function (error, data) {
+d3.csv("https://raw.githubusercontent.com/ed-villani/data-visualization-20201/master/co_ranking.csv", function (error, data) {
 	if (error) throw error;
 
 	var parsedData = [];
