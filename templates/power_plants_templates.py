@@ -17,7 +17,6 @@ class PowerPlantsTemplate:
         
         <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="bumpchart.js"></script>
     </head>
 
     <body>
@@ -72,7 +71,8 @@ in a change of a non-renewable energy mix to a renewable one.
 
             <p>
                 There is more than 1 century that humans starting constructing power plants. We started with
-                non-renewables ones, passing to sustainable and then renewables.
+                non-renewables ones, passing to sustainable and then renewables. We can notice how some
+                events have shaped the decision-making of power plants.
             </p>
 
         <div>{pp_per_year}</div>
@@ -111,6 +111,9 @@ in a change of a non-renewable energy mix to a renewable one.
         <div>{timeline}</div>
         <div>{gdp_v_carbon}</div>      
         <div id="my_dataviz"></div>
+
+        <h1 class="title">Countries CO2 Emissions ranking over time</h1>
+        <script src="bumpchart.js"></script>
     </body>
 
     </html>"""
