@@ -8,11 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-html {
-    font-family: helvetica;
-    font-weight: 100;
-}
-
 #apnd {
     white-space: nowrap;
 }
@@ -196,12 +191,12 @@ p.co2 {
     font-weight: 700;
   }
 
-  text {
-        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff; 
+  /* text {
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff; 
     font-family: 'Open Sans', sans-serif;
     opacity: 0.7;
     font-size: 18px;
-  }
+  } */
   
   .y-label {
     fill: black;
